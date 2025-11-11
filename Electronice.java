@@ -63,13 +63,4 @@ public class Electronice implements Stare {
         return "Marca: "+ marca + ", Nume produs: "+numeProdus+", Pret: "+ pret+", Disponibilitate:"+disponibil+ " ";
     }
 
-    @Override
-    public void nou() {
-        System.out.println("Fitnessbandul este nou.");
-    }
-
-    @Override
-    public void resigilat() {
-        System.out.println("Fitnessbandul este resigilat.");
-    }
 }
