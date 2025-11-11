@@ -1,6 +1,6 @@
 package com.mycompany.electronice;
 
-public class Electronice implements Stare {
+public class Electronice {
     private String marca;
     private String numeProdus;
     private double pret;
@@ -64,3 +64,4 @@ public class Electronice implements Stare {
     }
 
 }
+
