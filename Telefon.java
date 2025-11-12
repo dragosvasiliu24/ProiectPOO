@@ -1,0 +1,101 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ro.ugal.aciee.electronice;
+
+/**
+ *
+ * @author ac1019
+ */
+public class Telefon extends Electronice implements Stare {
+    
+    private int memorieRAM,numarNuclee,memorieInterna;
+    private String culoare;
+    private boolean waterproof;
+    
+    public Telefon(){
+        super();
+        this.memorieRAM=0;
+        this.culoare=null;
+        this.memorieInterna=0;
+        this.numarNuclee=0;
+        this.waterproof=false;
+    }
+    
+    public Telefon(String marca, String numeProdus, double pret , boolean disponibil, int memorieRam, int numarNuclee, int memorieInterna, String culoare, boolean waterproof ){
+        super(marca, numeProdus, pret, disponibil);
+        this.culoare=culoare;
+        this.memorieInterna=memorieInterna;
+        this.memorieRAM=memorieRam;
+        this.numarNuclee=numarNuclee;
+        this.waterproof=waterproof;
+    }
+    
+    public Telefon(Telefon copy){
+        super(copy);
+        this.culoare=copy.culoare;
+        this.memorieInterna=copy.memorieInterna;
+        this.memorieRAM=copy.memorieRAM;
+        this.numarNuclee=copy.numarNuclee;
+        this.waterproof=copy.waterproof;
+    }
+    
+    public void setCuloare (String culoare){
+        this.culoare=culoare;
+    }
+    
+    public String getCuloare(){
+        return culoare;
+    }
+    
+    public void setMemorieInterna (int memorieInterna){
+        this.memorieInterna=memorieInterna;
+    }
+    
+    public int getMemorieInterna(){
+        return memorieInterna;
+    }
+    
+    public void  setMemorieRAM(int memorieRAM){
+        this.memorieRAM=memorieRAM;
+    }
+    
+    public int getMemorieRam(){
+        return memorieRAM;
+    }
+    
+    public void setNumarNuclee(int numarNuclee){
+        this.numarNuclee=numarNuclee;
+    }
+    
+    public int getNumarNuclee(){
+        return numarNuclee;
+    }
+    
+    public void setWaterproof(boolean waterproof){
+        this.waterproof=waterproof;
+    }
+    
+    public boolean getWaterproof(){
+        return waterproof;
+    }
+    
+    @Override
+    public String toString(){
+        return super.toString() + "Culoare:" + culoare + " Memorie interna:"+ memorieInterna+" Memorie RAm:"+memorieRAM+" Numar Nuclee:"+numarNuclee+" Waterproof:"+waterproof;
+    }
+    
+     @Override
+    public void nou() {
+        System.out.println("Telefonul este nou.");
+    }
+
+    @Override
+    public void resigilat() {
+        System.out.println("Telefonul este resigilat.");
+    }
+    
+    
+    
+}
