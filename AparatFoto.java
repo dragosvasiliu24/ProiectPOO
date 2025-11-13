@@ -8,7 +8,7 @@ package com.mycompany.electronice;
  *
  * @author Asus
  */
-public class AparatFoto extends Electronice {
+public class AparatFoto extends Electronice implements Stare {
     private int megaPixeli;
     private boolean areZoomOptic;
     private String tip;
@@ -90,3 +90,4 @@ public class AparatFoto extends Electronice {
      }
              
 }
+
