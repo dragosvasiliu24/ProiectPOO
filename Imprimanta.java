@@ -8,7 +8,7 @@ package com.mycompany.electronice;
  *
  * @author Asus
  */
-public class Imprimanta extends Electronice {
+public class Imprimanta extends Electronice implements Stare {
     private int rezolutie;
     private String tip;
     private boolean color;
@@ -91,3 +91,4 @@ public void setCapacitateHartie(int capacitateHartie){
           '}'; 
       }
 }
+
