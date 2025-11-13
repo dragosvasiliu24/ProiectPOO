@@ -29,7 +29,7 @@ public class Boxa_portabila extends Electronice implements Stare{
         this.distantaMaxima=0;
     }
     public Boxa_portabila (String marca, String numeProdus, double pret, boolean disponibil, String material, 
-            String culoare, int sensibilitate, int autonomieAcumulator, int capacitateAcumulator, int distantaMaxima)
+            String culoare, int sensibilitate, double greutate, int autonomieAcumulator, int capacitateAcumulator, int distantaMaxima)
     {
         super(marca, numeProdus, pret, disponibil);
         this.material=material;
@@ -132,3 +132,4 @@ public class Boxa_portabila extends Electronice implements Stare{
         System.out.println("Boxa portabila este resigilata");
     }
 }
+
