@@ -12,7 +12,7 @@ public class Casti extends Electronice implements Stare{
     private boolean wireless;
     private String tip; //in-ear on-ear 
     private int autonomieBaterie; // ore functionare
-    public boolean rezistentaApa;
+    private boolean rezistentaApa;
     private boolean areMicrofon;
     private boolean noiceCancellation;
     
@@ -119,3 +119,4 @@ public class Casti extends Electronice implements Stare{
         System.out.println("Castile sunt resigilate");
     }
 }
+
