@@ -7,8 +7,10 @@ public class Electronice {
     private boolean disponibil;
 
     public Electronice()
-    {
-
+    {    this.marca=null;
+         this.numeProdus=null;
+         this.pret=0;
+         this.disponibil=false;
     }
     public Electronice (String marca, String numeProdus, double pret, boolean disponibil)
     {
@@ -64,4 +66,5 @@ public class Electronice {
     }
 
 }
+
 
