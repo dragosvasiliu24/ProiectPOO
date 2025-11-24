@@ -98,4 +98,13 @@ public class Fitnessband extends Electronice implements Stare {
     public void resigilat() {
         System.out.println("Fitnessbandul este resigilat.");
     }
+
+    public static void filtreazaFitnessband(Fitnessband[] vector, boolean giroscop, boolean gps) {
+        System.out.println("Fitnessband care respecta cerintele");
+        for(Fitnessband b : vector) {
+            if(b.giroscop == giroscop && b.gps == gps ) {
+                System.out.println(b);
+            }
+        }
+    }
 }
