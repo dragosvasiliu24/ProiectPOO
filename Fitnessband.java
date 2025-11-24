@@ -101,10 +101,12 @@ public class Fitnessband extends Electronice implements Stare {
 
     public static void filtreazaFitnessband(Fitnessband[] vector, boolean giroscop, boolean gps) {
         System.out.println("Fitnessband care respecta cerintele");
-        for(Fitnessband b : vector) {
+        for (Object obj : vector) {
+            Fitnessband b = (Fitnessband) obj;
             if(b.giroscop == giroscop && b.gps == gps ) {
                 System.out.println(b);
             }
         }
     }
 }
+
