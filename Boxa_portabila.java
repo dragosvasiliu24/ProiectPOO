@@ -131,5 +131,18 @@ public class Boxa_portabila extends Electronice implements Stare{
     public void resigilat() {
         System.out.println("Boxa portabila este resigilata");
     }
+    public static void filtreazaBoxe(Object[] vector, int autonomieMinima, double greutateMaxima) 
+    {
+        System.out.println("\nBoxe care au atunomia "+autonomieMinima+"ore si greutatea maxima "+greutateMaxima+":");
+        for (Object obj : vector) 
+        {
+            Boxa_portabila b = (Boxa_portabila) obj;
+            if (b.getAutonomieAcumulator() >= autonomieMinima && b.getGreutate() <= greutateMaxima) 
+            {
+                System.out.println(b);
+            }
+        }
+    }
 }
+
 
