@@ -60,6 +60,9 @@ public class VecotriCastiBoxa {
         for (Object b : boxeVector) {
             System.out.println(b);
         }
+        Boxa_portabila.filtreazaBoxe(boxeVector, 10, 1.0);
+        Casti.filtreazaCasti(castiVector, 350, true);
     
     }
 }
+
