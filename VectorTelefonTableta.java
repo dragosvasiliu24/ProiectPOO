@@ -19,7 +19,7 @@ public class VectorTelefonTableta {
             System.out.println(e);
         }
         
-        Object[] telefonVector=new Object[10];
+        Telefon[] telefonVector=new Telefon[10];
         for(int i=0;i<10;i++){
             telefonVector[i]=new Telefon("Marca telefon"+i,"Produs"+i,1500+i*50,i%2==1,2+i*2,4+i*2,8+i,"Culoare"+i,i%2==1);
         }
@@ -27,7 +27,7 @@ public class VectorTelefonTableta {
             System.out.println(t);
         }
          
-         Object[] tabletaVector=new Object[10];
+         Tableta[] tabletaVector=new Tableta[10];
         for(int i=0;i<10;i++){
             tabletaVector[i]=new Tableta("Marca tableta"+i,"Produs"+i,1200+i*50,i%2==1,5+i,350+i*2,12+i,i%2==0,"Rezolutie"+i);
         }
@@ -55,6 +55,9 @@ public class VectorTelefonTableta {
         System.out.println(b1);
         System.out.println(b2);
         System.out.println(b3);
+        
+        Telefon.filtreazaTelefoane(telefonVector,10,true);
+        Tableta.filtreazaTablete(tabletaVector, 364, true);
     }
   
 }
