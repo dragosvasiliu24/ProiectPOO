@@ -11,7 +11,7 @@ public class VectorSmartwatchFitnessBand {
             System.out.println(e);
         }
 
-        Object[] smartwatchVector = new Object[10];
+        Smartwatch[] smartwatchVector = new Smartwatch[10];
         for (int i = 0; i < 10; i++) {
             smartwatchVector[i] = new Smartwatch("Marca Smartwatch" + i, "Produs" + i, 100 + i * 10, i % 2 == 0, "Stil" + i, "Sistem de operare" + i, 40+i, 15+i, 170+i, i % 2 == 0);
         }
@@ -19,7 +19,7 @@ public class VectorSmartwatchFitnessBand {
             System.out.println(s);
         }
 
-        Object [] fitnessbandVector = new Object[10];
+        Fitnessband [] fitnessbandVector = new Fitnessband[10];
         for (int i = 0; i < 10; i++) {
             fitnessbandVector[i] = new Fitnessband("Marca FitnessBand" + i, "Produs" + i, 100 + i * 10, i % 2 == 0, i % 2 == 0, i % 2 == 1, i % 2 == 0, i % 2 == 1, "Material carcasa" + i, "Culoare" + i);
         }
@@ -48,5 +48,7 @@ public class VectorSmartwatchFitnessBand {
         System.out.println(f2);
         System.out.println(f3);
 
+        Smartwatch.filtreazaSmartwatch(smartwatchVector, 45, 120);
+        Fitnessband.filtreazaFitnessband(fitnessbandVector, true, true);
     }
 }
