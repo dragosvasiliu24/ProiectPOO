@@ -1,5 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package ro.ugal.aciee.electronice;
 
+/**
+ *
+ * @author ac1019
+ */
 public class Tableta extends Electronice implements Stare{
     
     private int diagonalaDisplay,greutate,capacitateBaterie;
@@ -85,6 +93,15 @@ public class Tableta extends Electronice implements Stare{
         System.out.println("Tableta este resigilata.");
     }
     
+    public static void filtreazaTablete(Tableta[] vector,int greutateMin,boolean incarcatorInclus){
+        System.out.println("-------Tablete care respecta cerinta------");
+        for(Tableta p :vector)
+        {
+            if(p.getGreutate()>=greutateMin & p.incarcatorInclus==incarcatorInclus){
+                System.out.println(p);
+            }
+        }
+    }
+    
     
 }
-
