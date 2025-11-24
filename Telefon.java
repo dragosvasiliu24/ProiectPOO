@@ -1,5 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package ro.ugal.aciee.electronice;
 
+/**
+ *
+ * @author ac1019
+ */
 public class Telefon extends Electronice implements Stare {
     
     private int memorieRAM,numarNuclee,memorieInterna;
@@ -53,7 +61,7 @@ public class Telefon extends Electronice implements Stare {
         this.memorieRAM=memorieRAM;
     }
     
-    public int getMemorieRam(){
+    public int getMemorieRAM(){
         return memorieRAM;
     }
     
@@ -88,7 +96,14 @@ public class Telefon extends Electronice implements Stare {
         System.out.println("Telefonul este resigilat.");
     }
     
-    
+    public static void filtreazaTelefoane(Telefon[] vector,int memorieRAMmin,boolean waterproof){
+        System.out.println("-------Telefoane care respecta cerinta------");
+        for(Telefon t :vector)
+        {
+            if(t.getMemorieRAM()>=memorieRAMmin & t.waterproof==waterproof){
+                System.out.println(t);
+            }
+        }
+    }
     
 }
-
