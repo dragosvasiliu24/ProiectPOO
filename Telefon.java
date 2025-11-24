@@ -96,10 +96,11 @@ public class Telefon extends Electronice implements Stare {
         System.out.println("Telefonul este resigilat.");
     }
     
-    public static void filtreazaTelefoane(Telefon[] vector,int memorieRAMmin,boolean waterproof){
+    public static void filtreazaTelefoane(Object[] vector,int memorieRAMmin,boolean waterproof){
         System.out.println("-------Telefoane care respecta cerinta------");
-        for(Telefon t :vector)
+        for(Object obj :vector)
         {
+            Telefon t=(Telefon) obj;
             if(t.getMemorieRAM()>=memorieRAMmin & t.waterproof==waterproof){
                 System.out.println(t);
             }
