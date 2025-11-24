@@ -93,10 +93,11 @@ public class Tableta extends Electronice implements Stare{
         System.out.println("Tableta este resigilata.");
     }
     
-    public static void filtreazaTablete(Tableta[] vector,int greutateMin,boolean incarcatorInclus){
+    public static void filtreazaTablete(Object[] vector,int greutateMin,boolean incarcatorInclus){
         System.out.println("-------Tablete care respecta cerinta------");
-        for(Tableta p :vector)
+        for(Object obj :vector)
         {
+            Tableta p=(Tableta) obj;
             if(p.getGreutate()>=greutateMin & p.incarcatorInclus==incarcatorInclus){
                 System.out.println(p);
             }
