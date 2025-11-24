@@ -118,5 +118,19 @@ public class Casti extends Electronice implements Stare{
     public void resigilat() {
         System.out.println("Castile sunt resigilate");
     }
+
+    public static void filtreazaCasti(Object[] vector, int pretMaxim, boolean areRezistentaApa) 
+    {
+        System.out.println("\nBoxe care au pretul maxim de "+pretMaxim+"lei si rezistenta apa: "+areRezistentaApa+":");
+        for (Object obj : vector) 
+        {
+            Casti c = (Casti) obj;
+            if (c.getPret() < pretMaxim && c.getRezistentaApa() == areRezistentaApa)
+            {
+                System.out.println(c);
+            }
+        }
+    }
 }
+
 
