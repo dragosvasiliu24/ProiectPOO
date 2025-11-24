@@ -112,7 +112,7 @@ public class Smartwatch extends Electronice implements Stare {
         System.out.println("Smartwatchul este resigilat.");
     }
 
-    public static void filtreazaSmartwatch(Smartwatch[] vector, int dimensiuneDisplay, int lungimeBratara) {
+    public static void filtreazaSmartwatch(Object[] vector, int dimensiuneDisplay, int lungimeBratara) {
         System.out.println("Smartwatch care respecta cerintele");
         for(Object obj : vector)  {
             Smartwatch b = (Smartwatch) obj;
@@ -122,4 +122,3 @@ public class Smartwatch extends Electronice implements Stare {
         }
     }
 }
-
