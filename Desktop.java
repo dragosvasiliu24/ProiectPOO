@@ -12,7 +12,7 @@ public class Desktop extends Electronice implements Stare {
         this.gaming = false;
         this.placaNvidia = false;
     }
-    public Desktop(String marca,String numeProdus,double pret,boolean disponibil,String sistemOperare, String culoare, String sistemRacire) {
+    public Desktop(String marca,String numeProdus,double pret,boolean disponibil,String sistemOperare, String culoare, String sistemRacire, boolean gaming, boolean placaNvidia) {
         super(marca,numeProdus ,pret,disponibil);
         this.sistemOperare = sistemOperare;
         this.culoare = culoare;
@@ -72,4 +72,14 @@ public class Desktop extends Electronice implements Stare {
         System.out.println(" com.mycompany.electronice.Desktop resigilat");
     }
 
+
+        public static void filtreazaDesktop(Object [] vector, String sistemOperare, boolean gaming){
+            System.out.println(" Desktop care respecta cerintele ");
+            for(Object obj : vector){
+                Desktop b=(Desktop) obj;
+                if(b.getSistemOperare()==sistemOperare && b.getGaming()==gaming ){
+                    System.out.println(b);
+                }
+            }
+        }
 }
