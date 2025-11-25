@@ -101,10 +101,11 @@ public class Telefon extends Electronice implements Stare {
         for(Object obj :vector)
         {
             Telefon t=(Telefon) obj;
-            if(t.getMemorieRAM()>=memorieRAMmin & t.waterproof==waterproof){
+            if(t.getMemorieRAM()>=memorieRAMmin & t.getWaterproof==waterproof){
                 System.out.println(t);
             }
         }
     }
     
 }
+
