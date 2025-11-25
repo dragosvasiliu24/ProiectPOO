@@ -1,6 +1,4 @@
 package com.mycompany.electronice;
-import com.mycompany.electronice.Electronice;
-import com.mycompany.electronice.Stare;
 
 public class Laptop extends Electronice implements Stare {
     private String tipProcesor;
@@ -84,4 +82,13 @@ public class Laptop extends Electronice implements Stare {
         System.out.println(" laptop resigilat");
     }
 
+    public static void filtreazaLaptop(Object [] vector, int diagonalaDisplay,int memorie){
+        System.out.println("Laptop filtrat");
+        for(Object obj : vector){
+            Laptop l = (Laptop) obj;
+            if(l.diagonalaDisplay==diagonalaDisplay&&l.memorie==memorie){
+                System.out.println(l);
+            }
+        }
+    }
 }
