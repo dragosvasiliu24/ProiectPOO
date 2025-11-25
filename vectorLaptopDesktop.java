@@ -44,5 +44,8 @@ public class vectorLaptopDesktop {
         System.out.println(d1);
         System.out.println(d2);
         System.out.println(d3);
+
+        Laptop.filtreazaLaptop(laptopVector, 16, 128);
+        Desktop.filtreazaDesktop(DesktopVector, "Windows", true );
 }
 }
