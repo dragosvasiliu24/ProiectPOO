@@ -4,6 +4,9 @@
  */
 package com.mycompany.electronice;
 
+import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 /**
  *
  * @author danut
@@ -131,6 +134,21 @@ public class Casti extends Electronice implements Stare{
             }
         }
     }
+
+    public static void scrieCastiInFisier(Object[] castiVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : castiVector) {
+                if (o == null) continue;
+
+                Casti c = (Casti) o;
+                pw.println(c.toString()); 
+            }
+            System.out.println("Am adăugat castile în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+        }
+    }
 }
+
 
 
