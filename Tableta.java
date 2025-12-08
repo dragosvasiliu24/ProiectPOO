@@ -103,6 +103,19 @@ public class Tableta extends Electronice implements Stare{
             }
         }
     }
-    
+     public static void scrieTabletaFisier(Object[] TabletaVector, String filename) {
+    try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+        for (Object o : TabletaVector) {
+            if (o == null) continue;
+
+            Tableta b = (Tableta) o;
+            pw.println(b.toString());   // scriere + trecere la linia următoare
+        }
+        System.out.println("Am adăugat Tablete în: " + filename);
+    } catch (IOException ex) {
+        System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+    }
+}
     
 }
+
