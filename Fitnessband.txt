@@ -1,0 +1,10 @@
+Marca: Marca FitnessBand0, Nume produs: Produs0, Pret: 100.0, Disponibilitate:true , Accelerometru:true, Giroscop:false, Senzor de lumina:true, GPS:false, Material carcasa:Material carcasa0, Culoare:Culoare0
+Marca: Marca FitnessBand1, Nume produs: Produs1, Pret: 110.0, Disponibilitate:false , Accelerometru:false, Giroscop:true, Senzor de lumina:false, GPS:true, Material carcasa:Material carcasa1, Culoare:Culoare1
+Marca: Marca FitnessBand2, Nume produs: Produs2, Pret: 120.0, Disponibilitate:true , Accelerometru:true, Giroscop:false, Senzor de lumina:true, GPS:false, Material carcasa:Material carcasa2, Culoare:Culoare2
+Marca: Marca FitnessBand3, Nume produs: Produs3, Pret: 130.0, Disponibilitate:false , Accelerometru:false, Giroscop:true, Senzor de lumina:false, GPS:true, Material carcasa:Material carcasa3, Culoare:Culoare3
+Marca: Marca FitnessBand4, Nume produs: Produs4, Pret: 140.0, Disponibilitate:true , Accelerometru:true, Giroscop:false, Senzor de lumina:true, GPS:false, Material carcasa:Material carcasa4, Culoare:Culoare4
+Marca: Marca FitnessBand5, Nume produs: Produs5, Pret: 150.0, Disponibilitate:false , Accelerometru:false, Giroscop:true, Senzor de lumina:false, GPS:true, Material carcasa:Material carcasa5, Culoare:Culoare5
+Marca: Marca FitnessBand6, Nume produs: Produs6, Pret: 160.0, Disponibilitate:true , Accelerometru:true, Giroscop:false, Senzor de lumina:true, GPS:false, Material carcasa:Material carcasa6, Culoare:Culoare6
+Marca: Marca FitnessBand7, Nume produs: Produs7, Pret: 170.0, Disponibilitate:false , Accelerometru:false, Giroscop:true, Senzor de lumina:false, GPS:true, Material carcasa:Material carcasa7, Culoare:Culoare7
+Marca: Marca FitnessBand8, Nume produs: Produs8, Pret: 180.0, Disponibilitate:true , Accelerometru:true, Giroscop:false, Senzor de lumina:true, GPS:false, Material carcasa:Material carcasa8, Culoare:Culoare8
+Marca: Marca FitnessBand9, Nume produs: Produs9, Pret: 190.0, Disponibilitate:false , Accelerometru:false, Giroscop:true, Senzor de lumina:false, GPS:true, Material carcasa:Material carcasa9, Culoare:Culoare9
