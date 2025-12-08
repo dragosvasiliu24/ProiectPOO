@@ -1,0 +1,10 @@
+Marca: Marca Smartwatch0, Nume produs: Produs0, Pret: 100.0, Disponibilitate:true Stil:Stil0, Sistem de operare:Sistem de operare0, Dimensiune display:40, Autonomie:15, LungimeBratara:170, Rezistent la apa:true
+Marca: Marca Smartwatch1, Nume produs: Produs1, Pret: 110.0, Disponibilitate:false Stil:Stil1, Sistem de operare:Sistem de operare1, Dimensiune display:41, Autonomie:16, LungimeBratara:171, Rezistent la apa:false
+Marca: Marca Smartwatch2, Nume produs: Produs2, Pret: 120.0, Disponibilitate:true Stil:Stil2, Sistem de operare:Sistem de operare2, Dimensiune display:42, Autonomie:17, LungimeBratara:172, Rezistent la apa:true
+Marca: Marca Smartwatch3, Nume produs: Produs3, Pret: 130.0, Disponibilitate:false Stil:Stil3, Sistem de operare:Sistem de operare3, Dimensiune display:43, Autonomie:18, LungimeBratara:173, Rezistent la apa:false
+Marca: Marca Smartwatch4, Nume produs: Produs4, Pret: 140.0, Disponibilitate:true Stil:Stil4, Sistem de operare:Sistem de operare4, Dimensiune display:44, Autonomie:19, LungimeBratara:174, Rezistent la apa:true
+Marca: Marca Smartwatch5, Nume produs: Produs5, Pret: 150.0, Disponibilitate:false Stil:Stil5, Sistem de operare:Sistem de operare5, Dimensiune display:45, Autonomie:20, LungimeBratara:175, Rezistent la apa:false
+Marca: Marca Smartwatch6, Nume produs: Produs6, Pret: 160.0, Disponibilitate:true Stil:Stil6, Sistem de operare:Sistem de operare6, Dimensiune display:46, Autonomie:21, LungimeBratara:176, Rezistent la apa:true
+Marca: Marca Smartwatch7, Nume produs: Produs7, Pret: 170.0, Disponibilitate:false Stil:Stil7, Sistem de operare:Sistem de operare7, Dimensiune display:47, Autonomie:22, LungimeBratara:177, Rezistent la apa:false
+Marca: Marca Smartwatch8, Nume produs: Produs8, Pret: 180.0, Disponibilitate:true Stil:Stil8, Sistem de operare:Sistem de operare8, Dimensiune display:48, Autonomie:23, LungimeBratara:178, Rezistent la apa:true
+Marca: Marca Smartwatch9, Nume produs: Produs9, Pret: 190.0, Disponibilitate:false Stil:Stil9, Sistem de operare:Sistem de operare9, Dimensiune display:49, Autonomie:24, LungimeBratara:179, Rezistent la apa:false
