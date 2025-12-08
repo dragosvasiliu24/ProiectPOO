@@ -62,7 +62,10 @@ public class VecotriCastiBoxa {
         }
         Boxa_portabila.filtreazaBoxe(boxeVector, 10, 1.0);
         Casti.filtreazaCasti(castiVector, 350, true);
-    
+
+        Boxa_portabila.scrieBoxeInFisier(boxeVector, "Boxe.txt");
+        Casti.scrieCastiInFisier(castiVector, "Casti.txt");
     }
 }
+
 
