@@ -58,6 +58,10 @@ public class VectorTelefonTableta {
         
         Telefon.filtreazaTelefoane(telefonVector,10,true);
         Tableta.filtreazaTablete(tabletaVector, 364, true);
+
+        Tableta.scrieTabletaFisier( tabletaVector, "Tableta.txt");
+        Telefon.scrieTelefonFisier( telefonVector, "Telefon.txt");
     }
   
 }
+
