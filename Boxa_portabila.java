@@ -4,6 +4,9 @@
  */
 package com.mycompany.electronice;
 
+import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 /**
  *
  * @author danut
@@ -143,6 +146,20 @@ public class Boxa_portabila extends Electronice implements Stare{
             }
         }
     }
+    public static void scrieBoxeInFisier(Object[] boxeVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : boxeVector) {
+                if (o == null) continue;
+
+                Boxa_portabila b = (Boxa_portabila) o;
+                pw.println(b.toString());   // scriere + trecere la linia următoare
+            }
+            System.out.println("Am adăugat boxele în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+        }
+    }
 }
+
 
 
