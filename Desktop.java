@@ -1,5 +1,9 @@
 package com.mycompany.electronice;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class Desktop extends Electronice implements Stare {
     private String sistemOperare, culoare, sistemRacire;
     private boolean gaming, placaNvidia;
@@ -77,9 +81,22 @@ public class Desktop extends Electronice implements Stare {
             System.out.println(" Desktop care respecta cerintele ");
             for(Object obj : vector){
                 Desktop b=(Desktop) obj;
-                if(b.getSistemOperare()==sistemOperare && b.getGaming()==gaming ){
+                if(b.getSistemOperare()!=sistemOperare && b.getGaming()==gaming ){
                     System.out.println(b);
                 }
             }
         }
+    public static void scrieDesktop(Object[] DesktopVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : DesktopVector) {
+                if (o == null) continue;
+
+                Desktop b = (Desktop) o;
+                pw.println(b.toString());   // scriere + trecere la linia următoare
+            }
+            System.out.println("Am adăugat Desktop-u în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+        }
+    }
 }
