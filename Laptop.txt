@@ -1,0 +1,10 @@
+Marca: marcaLaptop0, Nume produs: numeProd0, Pret: 4499.99, Disponibilitate:true tipProcesorprocesor0sistemOperaresistemOperare0diagonala display14rata refresh60memorie16touchscreenfalse
+Marca: marcaLaptop1, Nume produs: numeProd1, Pret: 4509.99, Disponibilitate:false tipProcesorprocesor1sistemOperaresistemOperare1diagonala display15rata refresh61memorie17touchscreentrue
+Marca: marcaLaptop2, Nume produs: numeProd2, Pret: 4519.99, Disponibilitate:true tipProcesorprocesor2sistemOperaresistemOperare2diagonala display16rata refresh62memorie18touchscreenfalse
+Marca: marcaLaptop3, Nume produs: numeProd3, Pret: 4529.99, Disponibilitate:false tipProcesorprocesor3sistemOperaresistemOperare3diagonala display17rata refresh63memorie19touchscreentrue
+Marca: marcaLaptop4, Nume produs: numeProd4, Pret: 4539.99, Disponibilitate:true tipProcesorprocesor4sistemOperaresistemOperare4diagonala display18rata refresh64memorie20touchscreenfalse
+Marca: marcaLaptop5, Nume produs: numeProd5, Pret: 4549.99, Disponibilitate:false tipProcesorprocesor5sistemOperaresistemOperare5diagonala display19rata refresh65memorie21touchscreentrue
+Marca: marcaLaptop6, Nume produs: numeProd6, Pret: 4559.99, Disponibilitate:true tipProcesorprocesor6sistemOperaresistemOperare6diagonala display20rata refresh66memorie22touchscreenfalse
+Marca: marcaLaptop7, Nume produs: numeProd7, Pret: 4569.99, Disponibilitate:false tipProcesorprocesor7sistemOperaresistemOperare7diagonala display21rata refresh67memorie23touchscreentrue
+Marca: marcaLaptop8, Nume produs: numeProd8, Pret: 4579.99, Disponibilitate:true tipProcesorprocesor8sistemOperaresistemOperare8diagonala display22rata refresh68memorie24touchscreenfalse
+Marca: marcaLaptop9, Nume produs: numeProd9, Pret: 4589.99, Disponibilitate:false tipProcesorprocesor9sistemOperaresistemOperare9diagonala display23rata refresh69memorie25touchscreentrue
