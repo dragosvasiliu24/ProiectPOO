@@ -106,6 +106,20 @@ public class Telefon extends Electronice implements Stare {
             }
         }
     }
+        public static void scrieTelefonFisier(Object[] TelefonVector, String filename) {
+    try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  
+        for (Object o : TelefonVector) {
+            if (o == null) continue;
+
+            Telefon b = (Telefon) o;
+            pw.println(b.toString());   
+        }
+        System.out.println("Am adăugat Telefoane în: " + filename);
+    } catch (IOException ex) {
+        System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+    }
+}
     
 }
+
 
