@@ -1,5 +1,9 @@
 package com.mycompany.electronice;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class Laptop extends Electronice implements Stare {
     private String tipProcesor;
     private String sistemOperare;
@@ -86,9 +90,22 @@ public class Laptop extends Electronice implements Stare {
         System.out.println("Laptop filtrat");
         for(Object obj : vector){
             Laptop l = (Laptop) obj;
-            if(l.diagonalaDisplay==diagonalaDisplay&&l.memorie==memorie){
+            if(l.diagonalaDisplay<=diagonalaDisplay&&l.memorie<=memorie){
                 System.out.println(l);
             }
+        }
+    }
+    public static void scrieLaptop(Object[] laptopVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : laptopVector) {
+                if (o == null) continue;
+
+                Laptop b = (Laptop) o;
+                pw.println(b.toString());   // scriere + trecere la linia următoare
+            }
+            System.out.println("Am adăugat Laptopu în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
         }
     }
 }
