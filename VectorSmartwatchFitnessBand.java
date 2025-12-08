@@ -50,6 +50,9 @@ public class VectorSmartwatchFitnessBand {
 
         Smartwatch.filtreazaSmartwatch(smartwatchVector, 45, 120);
         Fitnessband.filtreazaFitnessband(fitnessbandVector, true, true);
+
+        Smartwatch.scrieSmartwatch(smartwatchVector, "Smartwatch.txt");
+        Fitnessband.scrieFitnessband(fitnessbandVector, "Fitnessband.txt");
     }
 }
 
