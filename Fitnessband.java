@@ -1,5 +1,9 @@
 package com.mycompany.electronice;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 public class Fitnessband extends Electronice implements Stare {
     private boolean accelerometru, giroscop, senzorLumina, gps;
     private String materialCarcasa, culoare;
@@ -86,7 +90,7 @@ public class Fitnessband extends Electronice implements Stare {
 
     @Override
     public String toString () {
-        return super.toString() + "Accelerometru:" + accelerometru + "Giroscop:" + giroscop + "Senzor de lumina:" + senzorLumina + "GPS:" + gps + "Material carcasa:" + materialCarcasa + "Culoare:" + culoare;
+        return super.toString() + ", Accelerometru:" + accelerometru + ", Giroscop:" + giroscop + ", Senzor de lumina:" + senzorLumina + ", GPS:" + gps + ", Material carcasa:" + materialCarcasa + ", Culoare:" + culoare;
     }
 
     @Override
@@ -108,6 +112,19 @@ public class Fitnessband extends Electronice implements Stare {
             }
         }
     }
-}
+    public static void scrieFitnessband(Object[] fitnessbandVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : fitnessbandVector) {
+                if (o == null) continue;
 
+                Fitnessband b = (Fitnessband) o;
+                pw.println(b.toString());   // scriere + trecere la linia următoare
+            }
+            System.out.println("Am adăugat Fitnessband în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+        }
+    }
+
+}
 
