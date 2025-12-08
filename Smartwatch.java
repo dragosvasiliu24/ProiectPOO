@@ -1,4 +1,7 @@
 package com.mycompany.electronice;
+import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Smartwatch extends Electronice implements Stare {
     private String stil;
@@ -99,7 +102,7 @@ public class Smartwatch extends Electronice implements Stare {
 
     @Override
     public String toString () {
-        return super.toString() + "Stil:" + stil + "Sistem de operare:" + sistemDeOperare + "Dimensiune display:" + dimensiuneDisplay + "Autonomie:" + autonomie + "LungimeBratara:" + lungimeBratara + "Rezistent la apa:" + rezistentLaApa;
+        return super.toString() + "Stil:" + stil  + ", Sistem de operare:" + sistemDeOperare + ", Dimensiune display:" + dimensiuneDisplay + ", Autonomie:" + autonomie + ", LungimeBratara:" + lungimeBratara + ", Rezistent la apa:" + rezistentLaApa;
     }
 
     @Override
@@ -112,6 +115,19 @@ public class Smartwatch extends Electronice implements Stare {
         System.out.println("Smartwatchul este resigilat.");
     }
 
+    public static void scrieSmartwatch(Object[] smartwatchVector, String filename) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(filename, true))) {  // true = append
+            for (Object o : smartwatchVector) {
+                if (o == null) continue;
+
+                Smartwatch b = (Smartwatch) o;
+                pw.println(b.toString());   // scriere + trecere la linia următoare
+            }
+            System.out.println("Am adăugat Smartwatch în: " + filename);
+        } catch (IOException ex) {
+            System.err.println("Eroare la scrierea în fișierul " + filename + ": " + ex.getMessage());
+        }
+    }
     public static void filtreazaSmartwatch(Object[] vector, int dimensiuneDisplay, int lungimeBratara) {
         System.out.println("Smartwatch care respecta cerintele");
         for(Object obj : vector)  {
